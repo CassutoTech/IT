@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CassutoTech | Home</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- Header will be loaded here -->
+  <main>
+    <h2>Welcome to CassutoTech</h2>
+    <p>Innovative tech for everyone.</p>
+    <a href="projects.html" class="button">View Our Projects</a>
+  </main>
+
+  <script>
+    async function loadHeader() {
+      const header = await fetch('partials/header.html').then(res => res.text());
+      document.body.insertAdjacentHTML('afterbegin', header);
+    }
+    loadHeader();
+  </script>
+
+</body>
+</html>
