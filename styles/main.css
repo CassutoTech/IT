@@ -217,8 +217,8 @@ body.dark-theme {
 }
 
 body.light-theme {
-  background-color: #918686; /* light gray-blue */
-  color: #FFFFFF; /* slate gray text */
+  background-color: #918686; /* Skin Color */
+  color: #FFFFFF; /* WHITE */
 }
 
 body.light-theme .nav-links a,
