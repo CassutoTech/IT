@@ -11,14 +11,16 @@
   <!-- Header will be loaded here -->
 
   <main>
-    <h2>Contact Us</h2>
-    <p>
-      Ready to collaborate? Have questions? Reach out to us!
-    </p>
-    <p>
-      Email: <a href="mailto:youremail@example.com" class="button">Send Email</a>
-    </p>
-  </main>
+  <h2>Contact Us</h2>
+  <p>Ready to collaborate? Send us a message directly below:</p>
+
+  <form action="https://formspree.io/f/mjkwgedd" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</main>
 
   <script>
     async function loadHeader() {
