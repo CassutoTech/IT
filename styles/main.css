@@ -7,6 +7,15 @@
   box-sizing: border-box;
 }
 
+/* Smooth theme transitions */
+body,
+.site-header,
+.site-footer,
+nav a,
+.footer-left a {
+  transition: background-color 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
 /* Body Styling */
 body {
   background-color: black;
