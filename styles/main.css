@@ -220,7 +220,7 @@ body.light-theme {
 }
 
 body.light-theme .site-header {
-  background: linear-gradient(to right, #dbeafe, #c4b5fd, #fbcfe8); /* soft indigo/pink */
+  background: linear-gradient(to right, #c7d2fe, #a78bfa, #818cf8);
 }
 
 body.light-theme .nav-links a,
