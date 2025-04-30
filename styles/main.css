@@ -219,10 +219,6 @@ body.light-theme {
   color: #1f2937; /* slate gray text */
 }
 
-body.light-theme .site-header {
-  background: linear-gradient(to right, #c7d2fe, #a78bfa, #818cf8);
-}
-
 body.light-theme .nav-links a,
 body.light-theme .footer-left a {
   color: #4b5563;
