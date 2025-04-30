@@ -161,3 +161,23 @@ p {
 .contact-form button:hover {
   background-color: #4c1d95;
 }
+
+.site-footer {
+  background-color: #111827;
+  color: #9ca3af;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.footer-container a {
+  color: #a78bfa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-container a:hover {
+  color: white;
+}
+
