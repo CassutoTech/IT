@@ -197,3 +197,53 @@ p {
   color: #9ca3af;
   font-size: 0.85rem;
 }
+
+/* Base (dark) theme is already your default */
+
+body.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+body.light-theme {
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+body.light-theme .site-header {
+  background: linear-gradient(to right, #e0e7ff, #c4b5fd, #d8b4fe);
+  color: #111827;
+}
+
+body.light-theme .nav-links a,
+body.light-theme .footer-left a {
+  color: #4b5563;
+}
+
+body.light-theme .nav-links a:hover,
+body.light-theme .footer-left a:hover {
+  color: #111827;
+}
+
+body.light-theme .site-footer {
+  background-color: #e5e7eb;
+  color: #4b5563;
+}
+
+.theme-toggle-button {
+  background: none;
+  border: 1px solid #9ca3af;
+  color: #9ca3af;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+.theme-toggle-button:hover {
+  background-color: #6b21a8;
+  color: white;
+  border-color: #6b21a8;
+}
