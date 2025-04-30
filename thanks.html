@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You – CassutoTech</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
 
+  <main>
+    <h2>Thanks for Reaching Out!</h2>
+    <p>We received your message and will get back to you soon.</p>
+    <a href="index.html" class="button">← Back to Home</a>
+  </main>
+
+  <script>
+    async function loadHeader() {
+      const header = await fetch('partials/header.html').then(res => res.text());
+      document.body.insertAdjacentHTML('afterbegin', header);
+    }
+    loadHeader();
+  </script>
+
+</body>
+</html>
