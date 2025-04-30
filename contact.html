@@ -53,7 +53,7 @@
     });
   </script>
 
-    <script>
+<script>
   async function loadFooter() {
     const footer = await fetch('partials/footer.html').then(res => res.text());
     document.body.insertAdjacentHTML('beforeend', footer);
