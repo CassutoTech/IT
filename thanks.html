@@ -14,18 +14,41 @@
     <a href="index.html" class="button">← Back to Home</a>
   </main>
 
-  <script>
-    async function loadHeader() {
-      const header = await fetch('partials/header.html').then(res => res.text());
-      document.body.insertAdjacentHTML('afterbegin', header);
-    }
-    loadHeader();
-  </script>
 <script>
+  // Load header
+  async function loadHeader() {
+    const header = await fetch('partials/header.html').then(res => res.text());
+    document.body.insertAdjacentHTML('afterbegin', header);
+  }
+
+  // Load footer
   async function loadFooter() {
     const footer = await fetch('partials/footer.html').then(res => res.text());
     document.body.insertAdjacentHTML('beforeend', footer);
   }
+
+  // Apply saved theme on load
+  function applyTheme(theme) {
+    document.body.classList.toggle('light-theme', theme === 'light');
+    document.body.classList.toggle('dark-theme', theme === 'dark');
+  }
+
+  // Init theme toggle button
+  function initThemeToggle() {
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    applyTheme(savedTheme);
+
+    document.addEventListener('click', (e) => {
+      if (e.target.id === 'theme-toggle') {
+        const newTheme = document.body.classList.contains('light-theme') ? 'dark' : 'light';
+        localStorage.setItem('theme', newTheme);
+        applyTheme(newTheme);
+      }
+    });
+  }
+
+  // When header is done loading, then init the theme toggle
+  loadHeader().then(initThemeToggle);
   loadFooter();
 </script>
 
