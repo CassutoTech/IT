@@ -215,13 +215,12 @@ body.dark-theme {
 }
 
 body.light-theme {
-  background-color: #f9fafb;
-  color: #111827;
+  background-color: #f3f4f6; /* light gray-blue */
+  color: #1f2937; /* slate gray text */
 }
 
 body.light-theme .site-header {
-  background: linear-gradient(to right, #e0e7ff, #c4b5fd, #d8b4fe);
-  color: #111827;
+  background: linear-gradient(to right, #dbeafe, #c4b5fd, #fbcfe8); /* soft indigo/pink */
 }
 
 body.light-theme .nav-links a,
@@ -231,7 +230,8 @@ body.light-theme .footer-left a {
 
 body.light-theme .nav-links a:hover,
 body.light-theme .footer-left a:hover {
-  color: #111827;
+  color: #1f2937;
+  text-shadow: none;
 }
 
 body.light-theme .site-footer {
