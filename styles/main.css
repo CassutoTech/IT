@@ -132,6 +132,7 @@ p {
   }
 }
 
+/* Contact page UI */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -171,6 +172,7 @@ p {
   background-color: #4c1d95;
 }
 
+/* Footer UI */
 .site-footer {
   background-color: #111827;
   color: #9ca3af;
@@ -216,7 +218,7 @@ body.dark-theme {
 
 body.light-theme {
   background-color: #918686; /* light gray-blue */
-  color: #1f2937; /* slate gray text */
+  color: #FFFFFF; /* slate gray text */
 }
 
 body.light-theme .nav-links a,
