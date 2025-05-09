@@ -246,3 +246,17 @@ body.light-theme .site-footer {
   background-color: #e5e7eb;
   color: #4b5563;
 }
+
+body.light-theme .theme-toggle-button {
+  background-color: white;
+  border: 1px solid #c084fc;
+  color: #6b21a8;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .theme-toggle-button:hover {
+  background-color: #ede9fe;
+  border-color: #a78bfa;
+  color: #4c1d95;
+}
